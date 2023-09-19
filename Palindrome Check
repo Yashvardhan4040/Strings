@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isreverse(string str)
+    {
+        string rev;
+        rev=str;
+        reverse(rev.begin(),rev.end());
+        if(rev==str)
+        return true;
+        else 
+        return false;
+    }
+
+int main()
+{
+    string str;
+    cout<<"Enter the string:";
+    getline(cin,str);
+    int result=isreverse(str);
+    (result==true)?cout<<"The string is a palindrome":cout<<"Given string is not a palindrome";
+    
+}
